@@ -1,0 +1,69 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wrap {
+    position: relative;
+    padding-top: 24px;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+}
+
+.input {
+    width: 100%;
+    font-size: 24px;
+    padding: 5px 10px;
+}
+
+.input[aria-invalid="true"] {
+    outline: 2px, solid tomato;
+}
+
+.error {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: tomato;
+}
+
+.wrapCheckbox {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.checkbox {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.labelCheckbox {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.submit {
+    align-self: flex-end;
+    width: 160px;
+    height: 34px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.errorSubmit {
+    align-self: flex-end;
+    margin: 0;
+    font-size: 16px;
+    color: tomato;
+}
